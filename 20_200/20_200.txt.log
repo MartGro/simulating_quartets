@@ -1,0 +1,14 @@
+IQ-TREE multicore version 2.0.5 for Linux 64-bit built May 15 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    cip2ryzen1.cip.ph.tum.de (AVX2, FMA3, 15 GB RAM)
+Command: ../../iqtree-2.0.5-Linux/bin/iqtree2 -s 20_200.txt
+Seed:    548227 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed May 27 15:25:08 2020
+Kernel:  AVX+FMA - 1 threads (16 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 16 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file 20_200.txt ... ERROR: File not found 20_200.txt

@@ -1,0 +1,101 @@
+IQ-TREE 2.0.5 built May 15 2020
+
+Input file name: /scratch/ga42vor/simulating_quartets/accuracy_comparision/training2_13/training2_13.fasta
+Type of analysis: tree reconstruction
+Random seed number: 887919
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 20 sequences with 200 amino-acid sites
+Number of constant sites: 76 (= 38% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 76 (= 38% of all sites)
+Number of parsimony informative sites: 106
+Number of distinct site patterns: 140
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: WAG
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -4435.0257 (s.e. 239.9013)
+Unconstrained log-likelihood (without tree): -916.7097
+Number of free parameters (#branches + #model parameters): 37
+Akaike information criterion (AIC) score: 8944.0513
+Corrected Akaike information criterion (AICc) score: 8961.4093
+Bayesian information criterion (BIC) score: 9066.0890
+
+Total tree length (sum of branch lengths): 3.4908
+Sum of internal branch lengths: 1.3521 (38.7340% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'taxon0' is drawn at root
+
++------taxon0
+|
+|          +------------taxon1
++----------|
+|          |  +------taxon2
+|          +--|
+|             |       +-------taxon3
+|             +-------|
+|                     +-------taxon4
+|
+|                       +-------------taxon5
+|          +------------|
+|          |            |    +------taxon6
+|          |            +----|
+|          |                 |      +------taxon7
+|          |                 +------|
+|          |                        |    +-------taxon8
+|          |                        +----|
+|          |                             |    +----taxon9
+|          |                             +----|
+|          |                                  +---------taxon10
++----------|
+           |                        +----------------taxon11
+           |                     +--|
+           |                     |  |    +----------taxon12
+           |                     |  +----|
+           |                     |       +-----taxon13
+           |             +-------|
+           |             |       |  +------------taxon14
+           |             |       +--|
+           |             |          |        +------------taxon15
+           |             |          +--------|
+           |             |                   +--------taxon16
+           +-------------|
+                         |          +------taxon17
+                         +----------|
+                                    |  +--------taxon18
+                                    +--|
+                                       +-----------taxon19
+
+Tree in newick format:
+
+(taxon0:0.0835495686,(taxon1:0.1417647659,(taxon2:0.0758604860,(taxon3:0.0879670807,taxon4:0.0862012821):0.0907198200):0.0227182329):0.1215511865,((taxon5:0.1559454964,(taxon6:0.0763958213,(taxon7:0.0812249687,(taxon8:0.0893070885,(taxon9:0.0541171863,taxon10:0.1165524391):0.0597528394):0.0540436276):0.0805406960):0.0581397035):0.1447621225,(((taxon11:0.1859065939,(taxon12:0.1228779481,taxon13:0.0698434353):0.0571339609):0.0370709428,(taxon14:0.1415603554,(taxon15:0.1485102481,taxon16:0.1062937034):0.0980879325):0.0135889161):0.0955706357,(taxon17:0.0832973026,(taxon18:0.1026404941,taxon19:0.1288351506):0.0129997684):0.1240831018):0.1545355126):0.1268131528);
+
+TIME STAMP
+----------
+
+Date and time: Wed May 27 23:06:05 2020
+Total CPU time used: 2.34312 seconds (0h:0m:2s)
+Total wall-clock time used: 2.34441 seconds (0h:0m:2s)
+

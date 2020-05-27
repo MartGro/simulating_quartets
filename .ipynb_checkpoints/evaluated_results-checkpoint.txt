@@ -1,0 +1,19 @@
+IQ_TREE with WAG Model
+
+
+Training1:
+run of 50
+average:  0.0224
+stdev:    0.0374
+
+
+Training2:
+run of 50
+average:  0.0765
+stdev:    0.0851
+
+
+Training3:
+run of 50
+average:  0.1094
+stdev:    0.1121

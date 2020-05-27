@@ -1,0 +1,101 @@
+IQ-TREE 2.0.5 built May 15 2020
+
+Input file name: /scratch/ga42vor/simulating_quartets/accuracy_comparision/training1_9/training1_9.fasta
+Type of analysis: tree reconstruction
+Random seed number: 695240
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 20 sequences with 200 amino-acid sites
+Number of constant sites: 69 (= 34.5% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 69 (= 34.5% of all sites)
+Number of parsimony informative sites: 108
+Number of distinct site patterns: 147
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: WAG
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -4284.0071 (s.e. 227.2081)
+Unconstrained log-likelihood (without tree): -943.0158
+Number of free parameters (#branches + #model parameters): 37
+Akaike information criterion (AIC) score: 8642.0142
+Corrected Akaike information criterion (AICc) score: 8659.3723
+Bayesian information criterion (BIC) score: 8764.0520
+
+Total tree length (sum of branch lengths): 3.1448
+Sum of internal branch lengths: 1.5575 (49.5269% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'taxon0' is drawn at root
+
++------taxon0
+|
++---------taxon1
+|
+|         +----taxon2
+|      +--|
+|      |  +--taxon3
++------|
+       |                              +----taxon4
+       |                           +--|
+       |                           |  |       +---taxon5
+       |                           |  +-------|
+       |                           |          +--taxon6
+       |               +-----------|
+       |               |           |      +---------taxon7
+       |               |           +------|
+       |               |                  +---taxon8
+       +---------------|
+                       |                   +----taxon9
+                       |          +--------|
+                       |          |        |    +-----taxon10
+                       |          |        +----|
+                       |          |             +------taxon11
+                       |      +---|
+                       |      |   |          +---taxon12
+                       |      |   |       +--|
+                       |      |   |       |  |  +------taxon13
+                       |      |   |       |  +--|
+                       |      |   |       |     +--taxon14
+                       |      |   +-------|
+                       |      |           +------taxon15
+                       +------|
+                              |         +------taxon16
+                              |    +----|
+                              |    |    +----taxon17
+                              +----|
+                                   |      +-----taxon18
+                                   +------|
+                                          +------taxon19
+
+Tree in newick format:
+
+(taxon0:0.0931637957,taxon1:0.1334019743,((taxon2:0.0722018562,taxon3:0.0458560639):0.0377786267,(((taxon4:0.0723746649,(taxon5:0.0519980611,taxon6:0.0460770895):0.1115498704):0.0500922733,(taxon7:0.1326535896,taxon8:0.0563075202):0.0989280129):0.1601479882,(((taxon9:0.0754834414,(taxon10:0.0872497836,taxon11:0.0940999596):0.0693188372):0.1190303684,((taxon12:0.0592458243,(taxon13:0.0966377691,taxon14:0.0311128051):0.0461815716):0.0497662669,taxon15:0.0994071885):0.1120090883):0.0519675321,((taxon16:0.0905480001,taxon17:0.0755911164):0.0753785636,(taxon18:0.0768724222,taxon19:0.0970127820):0.1000228716):0.0674772647):0.0935035763):0.2163692392):0.0980159988);
+
+TIME STAMP
+----------
+
+Date and time: Wed May 27 23:01:06 2020
+Total CPU time used: 2.30323 seconds (0h:0m:2s)
+Total wall-clock time used: 2.30423 seconds (0h:0m:2s)
+

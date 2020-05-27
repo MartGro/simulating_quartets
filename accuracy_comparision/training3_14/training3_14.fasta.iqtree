@@ -1,0 +1,101 @@
+IQ-TREE 2.0.5 built May 15 2020
+
+Input file name: /scratch/ga42vor/simulating_quartets/accuracy_comparision/training3_14/training3_14.fasta
+Type of analysis: tree reconstruction
+Random seed number: 249533
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 20 sequences with 200 amino-acid sites
+Number of constant sites: 36 (= 18% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 36 (= 18% of all sites)
+Number of parsimony informative sites: 140
+Number of distinct site patterns: 179
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: WAG
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -3896.4062 (s.e. 171.7246)
+Unconstrained log-likelihood (without tree): -1021.2452
+Number of free parameters (#branches + #model parameters): 37
+Akaike information criterion (AIC) score: 7866.8124
+Corrected Akaike information criterion (AICc) score: 7884.1704
+Bayesian information criterion (BIC) score: 7988.8502
+
+Total tree length (sum of branch lengths): 2.7085
+Sum of internal branch lengths: 1.3395 (49.4560% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'taxon0' is drawn at root
+
++--taxon0
+|
++--taxon1
+|
+|                  +----------taxon2
+|             +----|
+|             |    |    +-------taxon3
+|             |    +----|
+|             |         |  +----taxon4
+|             |         +--|
+|             |            |    +-------taxon5
+|             |            +----|
+|             |                 +----taxon6
+|     +-------|
+|     |       |       +-------taxon7
+|     |       |  +----|
+|     |       |  |    +--taxon8
+|     |       +--|
+|     |          |  +---taxon9
+|     |          +--|
+|     |             |    +--taxon10
+|     |             +----|
+|     |                  |  +--taxon11
+|     |                  +--|
+|     |                     +------taxon12
++-----|
+      |                               +-----taxon13
+      |                            +--|
+      |                            |  +--taxon14
+      |                         +--|
+      |                         |  +--taxon15
+      +-------------------------|
+                                |        +------taxon16
+                                |  +-----|
+                                |  |     |        +---taxon17
+                                |  |     +--------|
+                                |  |              +-----taxon18
+                                +--|
+                                   +--taxon19
+
+Tree in newick format:
+
+(taxon0:0.0450338890,taxon1:0.0342318635,(((taxon2:0.1485415143,(taxon3:0.1067969665,(taxon4:0.0700375315,(taxon5:0.1124215380,taxon6:0.0716437226):0.0639062513):0.0273498870):0.0677247283):0.0738769169,((taxon7:0.1127416538,taxon8:0.0251864017):0.0674658914,(taxon9:0.0538397504,(taxon10:0.0324542010,(taxon11:0.0142974131,taxon12:0.0974941660):0.0489748932):0.0694000783):0.0343836062):0.0288145858):0.1079093142,(((taxon13:0.0882435423,taxon14:0.0488934492):0.0303050805,taxon15:0.0282541163):0.0451852854,((taxon16:0.0906955195,(taxon17:0.0606864315,taxon18:0.0863828282):0.1255477141):0.0839729847,taxon19:0.0411123482):0.0474225945):0.3308191804):0.0864623592);
+
+TIME STAMP
+----------
+
+Date and time: Wed May 27 23:03:20 2020
+Total CPU time used: 2.73661 seconds (0h:0m:2s)
+Total wall-clock time used: 2.73773 seconds (0h:0m:2s)
+
