@@ -3,9 +3,9 @@ Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
 Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
 
 Host:    cip2ryzen1.cip.ph.tum.de (AVX2, FMA3, 15 GB RAM)
-Command: ../iqtree-2.0.5-Linux/bin/iqtree2 -s /scratch/ga42vor/simulating_quartets/accuracy_comparision/training1_49/training1_49.fasta -m WAG -redo
-Seed:    997321 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Wed May 27 23:02:39 2020
+Command: ../iqtree-2.0.5-Linux/bin/iqtree2 -s /scratch/ga42vor/simulating_quartets/accuracy_comparision/training1_49/training1_49.fasta -redo -m WAG
+Seed:    449090 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu May 28 17:04:58 2020
 Kernel:  AVX+FMA - 1 threads (16 CPU cores detected)
 
 HINT: Use -nt option to specify number of threads because your CPU has 16 cores!
@@ -13,71 +13,68 @@ HINT: -nt AUTO will automatically determine the best number of threads to use.
 
 Reading alignment file /scratch/ga42vor/simulating_quartets/accuracy_comparision/training1_49/training1_49.fasta ... Fasta format detected
 Alignment most likely contains protein sequences
-Alignment has 20 sequences with 200 columns, 147 distinct patterns
-114 parsimony-informative, 17 singleton sites, 69 constant sites
+Alignment has 20 sequences with 200 columns, 148 distinct patterns
+112 parsimony-informative, 22 singleton sites, 66 constant sites
          Gap/Ambiguity  Composition  p-value
-   1  taxon0     0.00%    passed     99.99%
-   2  taxon1     0.00%    passed     97.62%
-   3  taxon2     0.00%    passed     99.73%
-   4  taxon3     0.00%    passed     99.81%
-   5  taxon4     0.00%    passed     96.67%
-   6  taxon5     0.00%    passed     97.76%
-   7  taxon6     0.00%    passed     97.99%
-   8  taxon7     0.00%    passed     99.55%
-   9  taxon8     0.00%    passed     99.93%
-  10  taxon9     0.00%    passed     99.04%
-  11  taxon10    0.00%    passed     96.85%
-  12  taxon11    0.00%    passed     99.98%
-  13  taxon12    0.00%    passed     99.93%
-  14  taxon13    0.00%    passed     99.94%
-  15  taxon14    0.00%    passed     97.92%
-  16  taxon15    0.00%    passed     68.53%
-  17  taxon16    0.00%    passed     97.48%
-  18  taxon17    0.00%    passed     93.29%
-  19  taxon18    0.00%    passed     93.18%
-  20  taxon19    0.00%    passed     35.73%
+   1  taxon0     0.00%    passed     97.39%
+   2  taxon1     0.00%    passed     96.15%
+   3  taxon2     0.00%    passed     77.63%
+   4  taxon3     0.00%    passed     84.27%
+   5  taxon4     0.00%    passed     97.01%
+   6  taxon5     0.00%    passed     83.67%
+   7  taxon6     0.00%    passed     97.70%
+   8  taxon7     0.00%    passed     99.64%
+   9  taxon8     0.00%    passed     99.12%
+  10  taxon9     0.00%    passed     83.12%
+  11  taxon10    0.00%    passed     95.78%
+  12  taxon11    0.00%    passed     99.85%
+  13  taxon12    0.00%    passed     93.75%
+  14  taxon13    0.00%    passed     68.27%
+  15  taxon14    0.00%    passed     82.24%
+  16  taxon15    0.00%    passed     99.86%
+  17  taxon16    0.00%    passed     87.69%
+  18  taxon17    0.00%    passed     98.07%
+  19  taxon18    0.00%    passed     99.90%
+  20  taxon19    0.00%    passed     98.64%
 ****  TOTAL      0.00%  0 sequences failed composition chi2 test (p-value<5%; df=19)
 
 Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
 
 NOTE: 0 MB RAM (0 GB) is required!
 Estimate model parameters (epsilon = 0.100)
-1. Initial log-likelihood: -3831.399
-Optimal log-likelihood: -3823.751
+1. Initial log-likelihood: -4818.366
+Optimal log-likelihood: -4812.696
 Parameters optimization took 1 rounds (0.005 sec)
 Computing ML distances based on estimated model parameters... 0.011 sec
 Computing BIONJ tree...
 0.000 seconds
-Log-likelihood of BIONJ tree: -3826.235
+Log-likelihood of BIONJ tree: -4814.185
 --------------------------------------------------------------------
 |             INITIALIZING CANDIDATE TREE SET                      |
 --------------------------------------------------------------------
-Generating 98 parsimony trees... 0.143 second
-Computing log-likelihood of 98 initial trees ... 0.157 seconds
-Current best score: -3823.751
+Generating 98 parsimony trees... 0.139 second
+Computing log-likelihood of 98 initial trees ... 0.162 seconds
+Current best score: -4812.696
 
 Do NNI search on 20 best initial trees
 Estimate model parameters (epsilon = 0.100)
-BETTER TREE FOUND at iteration 1: -3819.084
-Iteration 10 / LogL: -3819.085 / Time: 0h:0m:0s
-Iteration 20 / LogL: -3819.244 / Time: 0h:0m:0s
-Finish initializing candidate tree set (1)
-Current best tree score: -3819.084 / CPU time: 0.614
+BETTER TREE FOUND at iteration 1: -4812.696
+Iteration 10 / LogL: -4812.719 / Time: 0h:0m:0s
+Iteration 20 / LogL: -4812.856 / Time: 0h:0m:0s
+Finish initializing candidate tree set (2)
+Current best tree score: -4812.696 / CPU time: 0.601
 Number of iterations: 20
 --------------------------------------------------------------------
 |               OPTIMIZING CANDIDATE TREE SET                      |
 --------------------------------------------------------------------
-UPDATE BEST LOG-LIKELIHOOD: -3819.084
-Iteration 30 / LogL: -3819.088 / Time: 0h:0m:0s (0h:0m:2s left)
-UPDATE BEST LOG-LIKELIHOOD: -3819.084
-Iteration 40 / LogL: -3819.084 / Time: 0h:0m:1s (0h:0m:1s left)
-Iteration 50 / LogL: -3947.404 / Time: 0h:0m:1s (0h:0m:1s left)
-UPDATE BEST LOG-LIKELIHOOD: -3819.084
-Iteration 60 / LogL: -3819.155 / Time: 0h:0m:1s (0h:0m:1s left)
-Iteration 70 / LogL: -3819.123 / Time: 0h:0m:1s (0h:0m:0s left)
-Iteration 80 / LogL: -3819.137 / Time: 0h:0m:1s (0h:0m:0s left)
-Iteration 90 / LogL: -3819.097 / Time: 0h:0m:2s (0h:0m:0s left)
-Iteration 100 / LogL: -3819.246 / Time: 0h:0m:2s (0h:0m:0s left)
+Iteration 30 / LogL: -4812.717 / Time: 0h:0m:0s (0h:0m:1s left)
+Iteration 40 / LogL: -4814.217 / Time: 0h:0m:1s (0h:0m:1s left)
+Iteration 50 / LogL: -4812.754 / Time: 0h:0m:1s (0h:0m:1s left)
+Iteration 60 / LogL: -4812.718 / Time: 0h:0m:1s (0h:0m:1s left)
+Iteration 70 / LogL: -4812.799 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 80 / LogL: -4816.615 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 90 / LogL: -4812.712 / Time: 0h:0m:2s (0h:0m:0s left)
+Iteration 100 / LogL: -4812.716 / Time: 0h:0m:2s (0h:0m:0s left)
 TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:2s
 
 --------------------------------------------------------------------
@@ -85,17 +82,17 @@ TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:2s
 --------------------------------------------------------------------
 Performs final model parameters optimization
 Estimate model parameters (epsilon = 0.010)
-1. Initial log-likelihood: -3819.084
-Optimal log-likelihood: -3819.084
-Parameters optimization took 1 rounds (0.002 sec)
-BEST SCORE FOUND : -3819.084
-Total tree length: 2.635
+1. Initial log-likelihood: -4812.696
+Optimal log-likelihood: -4812.696
+Parameters optimization took 1 rounds (0.004 sec)
+BEST SCORE FOUND : -4812.696
+Total tree length: 3.519
 
 Total number of iterations: 102
-CPU time used for tree search: 2.312 sec (0h:0m:2s)
-Wall-clock time used for tree search: 2.317 sec (0h:0m:2s)
-Total CPU time used: 2.349 sec (0h:0m:2s)
-Total wall-clock time used: 2.354 sec (0h:0m:2s)
+CPU time used for tree search: 2.300 sec (0h:0m:2s)
+Wall-clock time used for tree search: 2.301 sec (0h:0m:2s)
+Total CPU time used: 2.337 sec (0h:0m:2s)
+Total wall-clock time used: 2.337 sec (0h:0m:2s)
 
 Analysis results written to: 
   IQ-TREE report:                /scratch/ga42vor/simulating_quartets/accuracy_comparision/training1_49/training1_49.fasta.iqtree
@@ -103,4 +100,4 @@ Analysis results written to:
   Likelihood distances:          /scratch/ga42vor/simulating_quartets/accuracy_comparision/training1_49/training1_49.fasta.mldist
   Screen log file:               /scratch/ga42vor/simulating_quartets/accuracy_comparision/training1_49/training1_49.fasta.log
 
-Date and Time: Wed May 27 23:02:42 2020
+Date and Time: Thu May 28 17:05:00 2020

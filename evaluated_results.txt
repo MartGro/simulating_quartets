@@ -6,6 +6,11 @@ run of 50
 average:  0.0224
 stdev:    0.0374
 
+Training1_nohet:
+run of 50
+average:  0.3506
+stdev:    0.1421
+
 
 Training2:
 run of 50
@@ -13,7 +18,23 @@ average:  0.0765
 stdev:    0.0851
 
 
+
+Training2_nohet:
+run of 50
+average:  0.4847
+stdev:    0.1463
+
+
+
 Training3:
 run of 50
 average:  0.1094
 stdev:    0.1121
+
+
+Training3_nohet:
+run of 50
+average:  0.3353
+stdev:    0.1560
+
+

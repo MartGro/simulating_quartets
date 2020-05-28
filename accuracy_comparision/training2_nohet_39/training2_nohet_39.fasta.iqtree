@@ -1,0 +1,104 @@
+IQ-TREE 2.0.5 built May 15 2020
+
+Input file name: /scratch/ga42vor/simulating_quartets/accuracy_comparision/training2_nohet_39/training2_nohet_39.fasta
+Type of analysis: tree reconstruction
+Random seed number: 874150
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 20 sequences with 200 amino-acid sites
+Number of constant sites: 134 (= 67% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 134 (= 67% of all sites)
+Number of parsimony informative sites: 56
+Number of distinct site patterns: 83
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: WAG
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -1294.0915 (s.e. 82.1373)
+Unconstrained log-likelihood (without tree): -770.2122
+Number of free parameters (#branches + #model parameters): 37
+Akaike information criterion (AIC) score: 2662.1831
+Corrected Akaike information criterion (AICc) score: 2679.5411
+Bayesian information criterion (BIC) score: 2784.2208
+
+Total tree length (sum of branch lengths): 0.5209
+Sum of internal branch lengths: 0.3588 (68.8767% of tree length)
+
+WARNING: 7 near-zero internal branches (<0.0050) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'taxon0' is drawn at root
+
++--taxon0
+|
++--taxon1
+|
+|                          +**taxon2
+|                       +**|
+|                       |  +**taxon6
+|                    +--|
+|                    |  |  +**taxon3
+|                    |  +**|
+|                    |     |  +**taxon4
+|                    |     +**|
+|                    |        +**taxon7
+|                +---|
+|                |   +--taxon5
+|             +--|
+|             |  |                                                 +--taxon12
+|             |  |                                              +--|
+|             |  |                                              |  +**taxon13
+|             |  |                                           +--|
+|             |  |                                           |  +---taxon16
+|             |  |                                        +--|
+|             |  |                                        |  +--taxon14
+|             |  |                                     +**|
+|             |  |                                     |  +--taxon15
+|             |  +-------------------------------------|
+|             |                                        |  +**taxon17
+|             |                                        +**|
+|             |                                           |  +**taxon18
+|             |                                           +--|
+|             |                                              +**taxon19
+|          +--|
+|          |  +--taxon10
+|       +**|
+|       |  |  +--taxon8
+|       |  +**|
+|       |     +**taxon9
++-------|
+        +**taxon11
+
+Tree in newick format:
+
+(taxon0:0.0200482441,taxon1:0.0099112261,(((((((taxon2:0.0049030506,taxon6:0.0048646235):0.0048915260,(taxon3:0.0000010000,(taxon4:0.0048721160,taxon7:0.0048765476):0.0000010000):0.0000010000):0.0096073418,taxon5:0.0050258488):0.0265055707,(((((taxon12:0.0149100953,taxon13:0.0049025919):0.0050194154,taxon16:0.0249880716):0.0097902114,taxon14:0.0099358562):0.0050018627,taxon15:0.0099690782):0.0048611636,(taxon17:0.0049177417,(taxon18:0.0049095095,taxon19:0.0000010000):0.0098364274):0.0000010000):0.2157635130):0.0149662191,taxon10:0.0084523118):0.0062310837,(taxon8:0.0098979136,taxon9:0.0048915492):0.0049030677):0.0048918544,taxon11:0.0000010000):0.0463300105);
+
+TIME STAMP
+----------
+
+Date and time: Thu May 28 16:22:06 2020
+Total CPU time used: 1.68786 seconds (0h:0m:1s)
+Total wall-clock time used: 1.68881 seconds (0h:0m:1s)
+
