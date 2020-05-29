@@ -1,0 +1,11 @@
+-----------------
+name:                        training1_wag
+substitution_model:          wag
+alpha_range:                 (0.05, 1)
+profile:                     all.freq
+profile_resampler:           ('dirichlet', 10)
+heterogeneous_branch_ratio:  0.9
+rate_swap_ratio:             random
+profile_swap_model:          (10, 20)         #(number of swaps)
+
+

@@ -1,0 +1,11 @@
+-----------------
+name:                        training1_wag_no_het
+substitution_model:          wag
+alpha_range:                 (0.05, 1)
+profile:                     all.freq
+profile_resampler:           ('dirichlet', 10)
+heterogeneous_branch_ratio:  0.0
+rate_swap_ratio:             0
+profile_swap_model:          0         #(number of swaps)
+
+
