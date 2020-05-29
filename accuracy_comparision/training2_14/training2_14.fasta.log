@@ -52,4 +52,52 @@ Log-likelihood of BIONJ tree: -3453.408
 --------------------------------------------------------------------
 |             INITIALIZING CANDIDATE TREE SET                      |
 --------------------------------------------------------------------
-Generating 98 parsimony trees... 
+Generating 98 parsimony trees... 0.128 second
+Computing log-likelihood of 98 initial trees ... 0.145 seconds
+Current best score: -3451.048
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -3446.273
+Iteration 10 / LogL: -3449.901 / Time: 0h:0m:0s
+Iteration 20 / LogL: -3449.893 / Time: 0h:0m:0s
+Finish initializing candidate tree set (2)
+Current best tree score: -3446.273 / CPU time: 0.557
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -3446.273 / Time: 0h:0m:0s (0h:0m:1s left)
+Iteration 40 / LogL: -3449.893 / Time: 0h:0m:0s (0h:0m:1s left)
+Iteration 50 / LogL: -3446.285 / Time: 0h:0m:1s (0h:0m:1s left)
+Iteration 60 / LogL: -3446.278 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 70 / LogL: -3446.273 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 80 / LogL: -3449.928 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 90 / LogL: -3449.906 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 100 / LogL: -3449.904 / Time: 0h:0m:2s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:2s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -3446.273
+Optimal log-likelihood: -3446.273
+Parameters optimization took 1 rounds (0.003 sec)
+BEST SCORE FOUND : -3446.273
+Total tree length: 2.187
+
+Total number of iterations: 102
+CPU time used for tree search: 2.099 sec (0h:0m:2s)
+Wall-clock time used for tree search: 2.100 sec (0h:0m:2s)
+Total CPU time used: 2.133 sec (0h:0m:2s)
+Total wall-clock time used: 2.134 sec (0h:0m:2s)
+
+Analysis results written to: 
+  IQ-TREE report:                /scratch/ga42vor/simulating_quartets/accuracy_comparision/training2_14/training2_14.fasta.iqtree
+  Maximum-likelihood tree:       /scratch/ga42vor/simulating_quartets/accuracy_comparision/training2_14/training2_14.fasta.treefile
+  Likelihood distances:          /scratch/ga42vor/simulating_quartets/accuracy_comparision/training2_14/training2_14.fasta.mldist
+  Screen log file:               /scratch/ga42vor/simulating_quartets/accuracy_comparision/training2_14/training2_14.fasta.log
+
+Date and Time: Thu May 28 17:05:35 2020

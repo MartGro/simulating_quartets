@@ -3,38 +3,100 @@ IQ_TREE with WAG Model
 
 Training1:
 run of 50
-average:  0.0224
-stdev:    0.0374
+Robinson_Foulds
+average:  0.0365
+stdev:    0.0682
+
+Average_p_dist
+average:  0.3527
+stdev:    0.1641
+
+Max_p_dist
+average:  0.4795
+stdev:    0.1818
+
+
 
 Training1_nohet:
 run of 50
-average:  0.3506
-stdev:    0.1421
+Robinson_Foulds
+average:  0.3447
+stdev:    0.1391
+
+Average_p_dist
+average:  0.3447
+stdev:    0.0823
+
+Max_p_dist
+average:  0.2378
+stdev:    0.1048
+
+
 
 
 Training2:
 run of 50
-average:  0.0765
-stdev:    0.0851
+Robinson_Foulds
+average:  0.0718
+stdev:    0.0586
+
+Average_p_dist
+average:  0.2810
+stdev:    0.1472
+
+Max_p_dist
+average:  0.4013
+stdev:    0.1759
 
 
 
 Training2_nohet:
 run of 50
-average:  0.4847
-stdev:    0.1463
+Robinson_Foulds
+average:  0.4824
+stdev:    0.1291
+
+Average_p_dist
+average:  0.1213
+stdev:    0.0412
+
+Max_p_dist
+average:  0.2328
+stdev:    0.0618
 
 
 
 Training3:
 run of 50
-average:  0.1094
-stdev:    0.1121
+Robinson_Foulds
+average:  0.1424
+stdev:    0.1490
+
+Average_p_dist
+average:  0.1424
+stdev:    0.1381
+
+Max_p_dist
+average:  0.3753
+stdev:    0.1686
+
+
 
 
 Training3_nohet:
 run of 50
-average:  0.3353
-stdev:    0.1560
+Robinson_Foulds
+average:  0.3341
+stdev:    0.1724
+
+Average_p_dist
+average:  0.1657
+stdev:    0.0944
+
+Max_p_dist
+average:  0.2868
+stdev:    0.1133
+
+
 
 

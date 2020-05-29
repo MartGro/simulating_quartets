@@ -2,7 +2,7 @@ IQ-TREE 2.0.5 built May 15 2020
 
 Input file name: /scratch/ga42vor/simulating_quartets/accuracy_comparision/training1_nohet_45/training1_nohet_45.fasta
 Type of analysis: tree reconstruction
-Random seed number: 612616
+Random seed number: 789567
 
 REFERENCES
 ----------
@@ -19,10 +19,10 @@ SEQUENCE ALIGNMENT
 ------------------
 
 Input data: 20 sequences with 200 amino-acid sites
-Number of constant sites: 114 (= 57% of all sites)
-Number of invariant (constant or ambiguous constant) sites: 114 (= 57% of all sites)
-Number of parsimony informative sites: 70
-Number of distinct site patterns: 105
+Number of constant sites: 100 (= 50% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 100 (= 50% of all sites)
+Number of parsimony informative sites: 82
+Number of distinct site patterns: 117
 
 SUBSTITUTION PROCESS
 --------------------
@@ -36,69 +36,66 @@ Model of rate heterogeneity: Uniform
 MAXIMUM LIKELIHOOD TREE
 -----------------------
 
-Log-likelihood of the tree: -1891.8545 (s.e. 133.4702)
-Unconstrained log-likelihood (without tree): -842.0539
+Log-likelihood of the tree: -2211.4820 (s.e. 141.1231)
+Unconstrained log-likelihood (without tree): -856.5371
 Number of free parameters (#branches + #model parameters): 37
-Akaike information criterion (AIC) score: 3857.7090
-Corrected Akaike information criterion (AICc) score: 3875.0670
-Bayesian information criterion (BIC) score: 3979.7468
+Akaike information criterion (AIC) score: 4496.9640
+Corrected Akaike information criterion (AICc) score: 4514.3220
+Bayesian information criterion (BIC) score: 4619.0018
 
-Total tree length (sum of branch lengths): 0.8916
-Sum of internal branch lengths: 0.4257 (47.7426% of tree length)
-
-WARNING: 1 near-zero internal branches (<0.0050) should be treated with caution
-         Such branches are denoted by '**' in the figure below
+Total tree length (sum of branch lengths): 1.1957
+Sum of internal branch lengths: 0.6247 (52.2448% of tree length)
 
 NOTE: Tree is UNROOTED although outgroup taxon 'taxon0' is drawn at root
 
-+----taxon0
++--taxon0
 |
-+-------------taxon1
++-------taxon1
 |
-|     +-----taxon2
-|  +**|
-|  |  |                                        +--taxon11
-|  |  |                                     +--|
-|  |  |                                     |  |         +--taxon12
-|  |  |                                     |  +---------|
-|  |  |                                     |            +---taxon13
-|  |  |                                +----|
-|  |  |                                |    |  +----taxon14
-|  |  |                                |    +--|
-|  |  |                                |       +----taxon15
-|  |  +--------------------------------|
-|  |                                   |       +---taxon16
-|  |                                   +-------|
-|  |                                           |  +----taxon17
-|  |                                           +--|
-|  |                                              |  +--taxon18
-|  |                                              +--|
-|  |                                                 +--taxon19
-+--|
-   |     +------taxon3
-   |  +--|
-   |  |  +----taxon4
-   +--|
-      |       +**taxon5
-      |   +---|
-      |   |   +------taxon6
-      +---|
-          |     +------taxon7
-          |  +--|
-          |  |  +---taxon8
-          +--|
-             |  +--taxon9
-             +--|
-                +-----taxon10
+|      +----taxon2
+|   +--|
+|   |  |  +----taxon3
+|   |  +--|
+|   |     |      +---taxon4
+|   |     |   +--|
+|   |     |   |  |  +**taxon6
+|   |     |   |  +--|
+|   |     |   |     |  +---taxon7
+|   |     |   |     +--|
+|   |     |   |        +--taxon8
+|   |     +---|
+|   |         +--taxon5
++---|
+    |                          +---taxon9
+    |                     +----|
+    |                     |    |  +---taxon10
+    |                     |    +--|
+    |                     |       +--taxon11
+    +---------------------|
+                          |   +----taxon12
+                          +---|
+                              |   +--taxon13
+                              +---|
+                                  |      +----taxon14
+                                  |   +--|
+                                  |   |  |  +--taxon16
+                                  |   |  +--|
+                                  |   |     |    +--taxon17
+                                  |   |     +----|
+                                  |   |          |   +----taxon18
+                                  |   |          +---|
+                                  |   |              +--taxon19
+                                  +---|
+                                      +--taxon15
 
 Tree in newick format:
 
-(taxon0:0.0243769531,taxon1:0.0638708492,((taxon2:0.0295468367,(((taxon11:0.0059572684,(taxon12:0.0101534654,taxon13:0.0193086414):0.0451058081):0.0097164832,(taxon14:0.0239481738,taxon15:0.0264018201):0.0097029974):0.0239885419,(taxon16:0.0212329417,(taxon17:0.0244760298,(taxon18:0.0152114496,taxon19:0.0145917473):0.0099248686):0.0096030481):0.0401612921):0.1506525794):0.0044939061,((taxon3:0.0338110937,taxon4:0.0244737975):0.0146015865,((taxon5:0.0047345838,taxon6:0.0336191029):0.0199393627,((taxon7:0.0315631586,taxon8:0.0190764051):0.0125769015,(taxon9:0.0097045549,taxon10:0.0298865529):0.0175418595):0.0114344493):0.0191246264):0.0100072971):0.0171137814);
+(taxon0:0.0144190763,taxon1:0.0633406132,((taxon2:0.0391415655,(taxon3:0.0445540238,((taxon4:0.0332458015,(taxon6:0.0000010000,(taxon7:0.0338541638,taxon8:0.0278953708):0.0201743900):0.0098445368):0.0096335526,taxon5:0.0100856724):0.0385289428):0.0282930979):0.0238045648,((taxon9:0.0378441985,(taxon10:0.0342063859,taxon11:0.0113250945):0.0292209036):0.0414555394,(taxon12:0.0430979620,(taxon13:0.0211566046,((taxon14:0.0392475998,(taxon16:0.0306974403,(taxon17:0.0140082028,(taxon18:0.0438564154,taxon19:0.0093912723):0.0347806224):0.0412479100):0.0210773331):0.0099506752,taxon15:0.0196241797):0.0325722371):0.0357662196):0.0352489564):0.1776746579):0.0353990582);
 
 TIME STAMP
 ----------
 
-Date and time: Thu May 28 16:19:58 2020
-Total CPU time used: 2.03553 seconds (0h:0m:2s)
-Total wall-clock time used: 2.03666 seconds (0h:0m:2s)
+Date and time: Thu May 28 17:10:11 2020
+Total CPU time used: 1.93328 seconds (0h:0m:1s)
+Total wall-clock time used: 1.9402 seconds (0h:0m:1s)
 
