@@ -63,6 +63,11 @@ big_alpha_dict = {
     "alpha_range":(0.99, 1)
 }
 
+long_branch_dict = {
+    "internal_branch_model":scipy.stats.uniform(0.002, 10),
+    "external_branch_model":scipy.stats.uniform(0.002, 10),
+}
+
 
 #####################################
 #Actual model parameter sets
@@ -83,6 +88,13 @@ training1_params = {
     "rate_swap_ratio":'random',
     "profile_swap_model":scipy.stats.randint(10, 20),
 }
+
+
+training1_long_branches_params = training1_params.copy()
+training1_long_branches_params.update(long_branch_dict)
+training1_long_branches_params.update({
+    "name":"training1_long_brances",
+})
 
 
 

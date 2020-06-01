@@ -7,6 +7,8 @@ import os
 from ete3 import Tree
 from phylogeny_utilities import utilities
 import pickle
+import itertools
+import generate_quartets
 
 
 __all__ = [
@@ -151,6 +153,19 @@ def make_simulator_from_parameters(parameters):
 
 
 
+#def prune_quartets_from_tree(simulated_tree):
+#    sequence_list = []
+#    for leaf in simulated_tree:
+#        sequence_list.append((leaf.name,leaf.sequence.decode())
+#                             
+#    for combination in itertools.combinations(sequence_list,4):
+#        tree_copy = simulated_tree.copy()
+#        tree_
+#    return sequence_list
+                             
+
+
+
 
 
 def simulate_tree_from_parameters(parameter_dict,dir_path,file_name):
@@ -174,11 +189,18 @@ def simulate_tree_from_parameters(parameter_dict,dir_path,file_name):
 
 
 
+def create_quartet_pickles(simulated_tree,dir_path):
+    quartet_sampler = generate_quartets.given_tree_quartet_sampler_from_full_tree(simulated_tree)
+    dir_path = dir_path+"/quartet_files"
+    os.makedirs(dir_path)
+    generate_quartets.create_pickle_from_quartet_sampler(quartet_sampler,dir_path)
+
+
 
 def get_iqtree_accuracy(parameter_dict,dir_path,file_name,model = None,specify_cores = None):
     #simulate a tree
     pdist_dict,fasta_filepath,simulated_tree = simulate_tree_from_parameters(parameter_dict,dir_path,file_name)
-    
+    create_quartet_pickles(simulated_tree,dir_path)
     
     run_iqtree(fasta_filepath,model,specify_cores)
     
@@ -192,3 +214,5 @@ def get_iqtree_accuracy(parameter_dict,dir_path,file_name,model = None,specify_c
     dump_results(dir_path,file_name,return_dict)
     return return_dict
     
+    
+
