@@ -1,0 +1,217 @@
+IQ-TREE multicore version 2.0.5 for Linux 64-bit built May 15 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    cip2ryzen1.cip.ph.tum.de (AVX2, FMA3, 15 GB RAM)
+Command: ../iqtree-2.0.5-Linux/bin/iqtree2 -s ./accuracy_testing/training1_3/training1_3.fasta -redo
+Seed:    347125 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Jun  1 17:18:32 2020
+Kernel:  AVX+FMA - 1 threads (16 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 16 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file ./accuracy_testing/training1_3/training1_3.fasta ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 20 sequences with 200 columns, 200 distinct patterns
+197 parsimony-informative, 2 singleton sites, 1 constant sites
+         Gap/Ambiguity  Composition  p-value
+   1  taxon0     0.00%    passed     83.24%
+   2  taxon1     0.00%    passed     32.06%
+   3  taxon2     0.00%    passed     67.81%
+   4  taxon3     0.00%    passed     62.94%
+   5  taxon4     0.00%    passed     24.92%
+   6  taxon5     0.00%    passed     58.97%
+   7  taxon6     0.00%    passed     21.03%
+   8  taxon7     0.00%    passed     28.64%
+   9  taxon8     0.00%    passed     87.46%
+  10  taxon9     0.00%    passed     66.12%
+  11  taxon10    0.00%    passed     60.32%
+  12  taxon11    0.00%    passed     88.28%
+  13  taxon12    0.00%    passed     77.54%
+  14  taxon13    0.00%    passed     93.31%
+  15  taxon14    0.00%    passed     85.40%
+  16  taxon15    0.00%    passed     56.03%
+  17  taxon16    0.00%    passed     80.70%
+  18  taxon17    0.00%    passed     98.38%
+  19  taxon18    0.00%    passed     85.73%
+  20  taxon19    0.00%    passed     80.42%
+****  TOTAL      0.00%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -8883.889
+Optimal log-likelihood: -8883.865
+Proportion of invariable sites: 0.000
+Gamma shape alpha: 1.933
+Parameters optimization took 1 rounds (0.023 sec)
+Time for fast ML tree search: 0.139 seconds
+
+NOTE: ModelFinder requires 6 MB RAM!
+ModelFinder will test up to 546 protein models (sample size: 200) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            9039.845     37  18153.690    18171.048    18275.727
+  2  LG+I          9037.019     38  18150.039    18168.448    18275.375
+  3  LG+G4         8883.847     38  17843.694    17862.104    17969.030
+  4  LG+I+G4       8883.856     39  17845.713    17865.213    17974.347
+  5  LG+R2         8898.519     39  17875.038    17894.538    18003.672
+  6  LG+R3         8881.786     41  17845.573    17867.370    17980.804
+  7  LG+R4         8880.772     43  17847.543    17871.799    17989.371
+ 16  LG+F+G4       8766.190     57  17646.381    17692.944    17834.385
+ 17  LG+F+I+G4     8766.186     58  17648.371    17696.910    17839.674
+ 29  WAG+G4        8746.998     38  17569.995    17588.405    17695.331
+ 30  WAG+I+G4      8747.001     39  17572.003    17591.503    17700.637
+ 42  WAG+F+G4      8626.245     57  17366.490    17413.054    17554.494
+ 43  WAG+F+I+G4    8626.249     58  17368.498    17417.037    17559.800
+ 55  JTT+G4        8826.722     38  17729.444    17747.854    17854.780
+ 56  JTT+I+G4      8826.723     39  17731.446    17750.946    17860.081
+ 68  JTT+F+G4      8709.458     57  17532.915    17579.478    17720.919
+ 69  JTT+F+I+G4    8709.458     58  17534.917    17583.456    17726.219
+ 81  JTTDCMut+G4   8826.349     38  17728.698    17747.108    17854.034
+ 82  JTTDCMut+I+G4 8826.350     39  17730.700    17750.200    17859.334
+ 94  JTTDCMut+F+G4 8711.523     57  17537.047    17583.610    17725.051
+ 95  JTTDCMut+F+I+G4 8711.524     58  17539.048    17587.587    17730.350
+107  DCMut+G4      8968.485     38  18012.970    18031.380    18138.306
+108  DCMut+I+G4    8968.484     39  18014.967    18034.467    18143.602
+120  DCMut+F+G4    8775.940     57  17665.880    17712.444    17853.884
+121  DCMut+F+I+G4  8775.941     58  17667.881    17716.420    17859.184
+133  VT+G4         8652.969     38  17381.937    17400.347    17507.273
+134  VT+I+G4       8652.974     39  17383.949    17403.449    17512.583
+146  VT+F+G4       8521.878     57  17157.756    17204.320    17345.760
+147  VT+F+I+G4     8521.883     58  17159.766    17208.305    17351.068
+159  PMB+G4        8577.625     38  17231.250    17249.659    17356.586
+160  PMB+I+G4      8577.615     39  17233.231    17252.731    17361.865
+172  PMB+F+G4      8489.096     57  17092.192    17138.755    17280.196
+173  PMB+F+I+G4    8488.920     58  17093.840    17142.379    17285.142
+185  Blosum62+G4   8624.165     38  17324.330    17342.740    17449.666
+186  Blosum62+I+G4 8624.169     39  17326.338    17345.838    17454.972
+198  Blosum62+F+G4 8517.440     57  17148.880    17195.443    17336.884
+199  Blosum62+F+I+G4 8517.440     58  17150.880    17199.419    17342.183
+211  Dayhoff+G4    8970.899     38  18017.799    18036.209    18143.135
+212  Dayhoff+I+G4  8970.896     39  18019.793    18039.293    18148.427
+224  Dayhoff+F+G4  8778.132     57  17670.265    17716.828    17858.269
+225  Dayhoff+F+I+G4 8778.131     58  17672.262    17720.801    17863.565
+237  mtREV+G4      9167.357     38  18410.713    18429.123    18536.049
+238  mtREV+I+G4    9167.353     39  18412.706    18432.206    18541.341
+250  mtREV+F+G4    8928.962     57  17971.924    18018.488    18159.928
+251  mtREV+F+I+G4  8928.957     58  17973.914    18022.453    18165.217
+263  mtART+G4      9429.559     38  18935.117    18953.527    19060.453
+264  mtART+I+G4    9429.590     39  18937.181    18956.681    19065.815
+276  mtART+F+G4    9155.796     57  18425.593    18472.156    18613.597
+277  mtART+F+I+G4  9155.793     58  18427.586    18476.125    18618.889
+289  mtZOA+G4      9271.276     38  18618.552    18636.962    18743.888
+290  mtZOA+I+G4    9271.274     39  18620.548    18640.048    18749.182
+302  mtZOA+F+G4    9028.719     57  18171.437    18218.001    18359.441
+303  mtZOA+F+I+G4  9028.715     58  18173.431    18221.970    18364.733
+315  mtMet+G4      9192.042     38  18460.084    18478.494    18585.420
+316  mtMet+I+G4    9192.042     39  18462.084    18481.584    18590.718
+328  mtMet+F+G4    8920.976     57  17955.953    18002.516    18143.957
+329  mtMet+F+I+G4  8920.975     58  17957.950    18006.489    18149.252
+341  mtVer+G4      9366.969     38  18809.937    18828.347    18935.273
+342  mtVer+I+G4    9366.967     39  18811.934    18831.434    18940.568
+354  mtVer+F+G4    9084.167     57  18282.334    18328.897    18470.338
+355  mtVer+F+I+G4  9084.164     58  18284.329    18332.868    18475.631
+367  mtInv+G4      9180.022     38  18436.044    18454.454    18561.380
+368  mtInv+I+G4    9180.023     39  18438.046    18457.546    18566.680
+380  mtInv+F+G4    8823.803     57  17761.607    17808.170    17949.611
+381  mtInv+F+I+G4  8823.804     58  17763.608    17812.147    17954.910
+393  mtMAM+G4      9522.871     38  19121.742    19140.152    19247.078
+394  mtMAM+I+G4    9522.863     39  19123.725    19143.225    19252.360
+406  mtMAM+F+G4    9251.258     57  18616.517    18663.080    18804.521
+407  mtMAM+F+I+G4  9251.251     58  18618.502    18667.041    18809.804
+419  HIVb+G4       9168.102     38  18412.203    18430.613    18537.539
+420  HIVb+I+G4     9167.950     39  18413.900    18433.400    18542.534
+432  HIVb+F+G4     9021.744     57  18157.488    18204.052    18345.493
+433  HIVb+F+I+G4   9021.379     58  18158.757    18207.296    18350.060
+445  HIVw+G4       9340.420     38  18756.840    18775.250    18882.177
+446  HIVw+I+G4     9340.416     39  18758.833    18778.333    18887.467
+458  HIVw+F+G4     9002.082     57  18118.164    18164.728    18306.168
+459  HIVw+F+I+G4   9002.097     58  18120.194    18168.733    18311.496
+471  FLU+G4        9134.794     38  18345.589    18363.998    18470.925
+472  FLU+I+G4      9134.789     39  18347.578    18367.078    18476.213
+484  FLU+F+G4      8944.045     57  18002.090    18048.654    18190.094
+485  FLU+F+I+G4    8944.043     58  18004.087    18052.626    18195.389
+497  rtREV+G4      8876.866     38  17829.732    17848.142    17955.068
+498  rtREV+I+G4    8876.870     39  17831.741    17851.241    17960.375
+510  rtREV+F+G4    8750.201     57  17614.401    17660.965    17802.405
+511  rtREV+F+I+G4  8750.102     58  17616.204    17664.743    17807.506
+523  cpREV+G4      8877.093     38  17830.187    17848.597    17955.523
+524  cpREV+I+G4    8877.095     39  17832.189    17851.689    17960.824
+536  cpREV+F+G4    8711.571     57  17537.143    17583.706    17725.147
+537  cpREV+F+I+G4  8711.574     58  17539.148    17587.687    17730.451
+Akaike Information Criterion:           PMB+F+G4
+Corrected Akaike Information Criterion: PMB+F+G4
+Bayesian Information Criterion:         PMB+F+G4
+Best-fit model: PMB+F+G4 chosen according to BIC
+
+All model information printed to ./accuracy_testing/training1_3/training1_3.fasta.model.gz
+CPU time for ModelFinder: 8.731 seconds (0h:0m:8s)
+Wall-clock time for ModelFinder: 8.733 seconds (0h:0m:8s)
+
+NOTE: 2 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -8489.096
+Optimal log-likelihood: -8489.096
+Gamma shape alpha: 2.738
+Parameters optimization took 1 rounds (0.019 sec)
+Computing ML distances based on estimated model parameters... 0.036 sec
+Computing BIONJ tree...
+0.000 seconds
+Log-likelihood of BIONJ tree: -8489.074
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.155 second
+Computing log-likelihood of 98 initial trees ... 0.640 seconds
+Current best score: -8489.074
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -8488.888
+Iteration 10 / LogL: -8488.893 / Time: 0h:0m:1s
+Iteration 20 / LogL: -8489.312 / Time: 0h:0m:2s
+Finish initializing candidate tree set (2)
+Current best tree score: -8488.888 / CPU time: 2.467
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -8488.946 / Time: 0h:0m:3s (0h:0m:9s left)
+Iteration 40 / LogL: -8488.961 / Time: 0h:0m:4s (0h:0m:7s left)
+Iteration 50 / LogL: -8489.244 / Time: 0h:0m:5s (0h:0m:6s left)
+Iteration 60 / LogL: -8488.898 / Time: 0h:0m:7s (0h:0m:4s left)
+Iteration 70 / LogL: -8488.908 / Time: 0h:0m:8s (0h:0m:3s left)
+Iteration 80 / LogL: -8488.916 / Time: 0h:0m:9s (0h:0m:2s left)
+Iteration 90 / LogL: -8488.978 / Time: 0h:0m:10s (0h:0m:1s left)
+Iteration 100 / LogL: -8488.914 / Time: 0h:0m:12s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:12s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -8488.888
+Optimal log-likelihood: -8488.888
+Gamma shape alpha: 2.683
+Parameters optimization took 1 rounds (0.019 sec)
+BEST SCORE FOUND : -8488.888
+Total tree length: 12.762
+
+Total number of iterations: 102
+CPU time used for tree search: 12.199 sec (0h:0m:12s)
+Wall-clock time used for tree search: 12.203 sec (0h:0m:12s)
+Total CPU time used: 12.312 sec (0h:0m:12s)
+Total wall-clock time used: 12.316 sec (0h:0m:12s)
+
+Analysis results written to: 
+  IQ-TREE report:                ./accuracy_testing/training1_3/training1_3.fasta.iqtree
+  Maximum-likelihood tree:       ./accuracy_testing/training1_3/training1_3.fasta.treefile
+  Likelihood distances:          ./accuracy_testing/training1_3/training1_3.fasta.mldist
+  Screen log file:               ./accuracy_testing/training1_3/training1_3.fasta.log
+
+Date and Time: Mon Jun  1 17:18:53 2020

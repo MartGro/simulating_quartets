@@ -6,6 +6,31 @@ import subprocess
 import os
 from ete3 import Tree
 from phylogeny_utilities import utilities
+import pickle
+
+
+__all__ = [
+    'constant',
+    'get_pdist_from_fasta',
+    'create_phylip_string',
+    'create_fasta_string',
+    'create_parameter_string',
+    'write_fasta_file',
+    'write_phylip_file',
+    'write_original_newick_string',
+    'write_parameter_file',
+    'run_iqtree',
+    'read_iq_tree_newick',
+    'make_simulator_from_parameters',
+    'print_param_dict',
+    'simulate_tree_from_parameters',
+    'get_iqtree_accuracy',
+    
+    
+    
+    
+]
+
 
 class constant():
     def __init__(self,constant):
@@ -49,7 +74,7 @@ def create_fasta_string(simulated_tree):
     return return_str
 
 def create_parameter_string(parameters):
-    s = "-----------------\n"
+    s = ""
     s+= "name:                        {}\n".format(parameters["name"])
     s+= "substitution_model:          {}\n".format(parameters["substitution_model"])
     s+= "alpha_range:                 {}\n".format(parameters["alpha_range"])
@@ -83,6 +108,12 @@ def write_parameter_file(dir_path,file_name,parameter_dict):
     file_path = dir_path+file_name+".params"
     with open(file_path,"w") as f:
         f.write(param_string)
+        
+        
+def dump_results(dir_path,file_name,result_dict):
+    file_path = dir_path+file_name+".result_pickle"
+    with open(file_path,"wb") as f:
+        pickle.dump(result_dict,f)
 
 
 #This depends on the environment -> could be made independent
@@ -118,17 +149,7 @@ def make_simulator_from_parameters(parameters):
         ))
     return simulator
 
-def print_param_dict(parameters):
-    s = ""
-    s+= "name:                        {}\n".format(parameters["name"])
-    s+= "substitution_model:          {}\n".format(parameters["substitution_model"])
-    s+= "alpha_range:                 {}\n".format(parameters["alpha_range"])
-    s+= "profile:                     {}\n".format(parameters["profile"])
-    s+= "profile_resampler:           {}\n".format(parameters["profile_resampler"])
-    s+= "heterogeneous_branch_ratio:  {}\n".format(parameters["heterogeneous_branch_ratio"])
-    s+= "rate_swap_ratio:             {}\n".format(str(parameters["rate_swap_ratio"]))
-    s+= "profile_swap_model:          {}         #(number of swaps)\n\n\n".format(str(parameters["profile_swap_model"].args))
-    return s
+
 
 
 
@@ -167,5 +188,7 @@ def get_iqtree_accuracy(parameter_dict,dir_path,file_name,model = None,specify_c
     comparison = simulated_tree.compare(iq_tree_tree,unrooted=True)
     avg_p = pdist_dict["avg_p"]
     max_p = pdist_dict["max_p"]
-    return {"rf":comparison["rf"],"size":comparison["effective_tree_size"],"max_rf":comparison["max_rf"],"avg_p":avg_p,"max_p":max_p}
+    return_dict = {"rf":comparison["rf"],"size":comparison["effective_tree_size"],"max_rf":comparison["max_rf"],"avg_p":avg_p,"max_p":max_p}
+    dump_results(dir_path,file_name,return_dict)
+    return return_dict
     
